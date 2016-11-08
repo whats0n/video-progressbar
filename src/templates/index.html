@@ -1,0 +1,23 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	<div class="slider">
+		<div class="js-slider">
+			<div class="video js-slide">
+				<video class="js-video" src="video/002.mp4" type="video/mp4"></video>
+				<button class="play js-play"></button>
+			</div>
+			<div class="video js-slide">
+				<video class="js-video" src="video/002.mp4" type="video/mp4"></video>
+				<button class="play js-play"></button>
+			</div>
+		</div>
+		<div class="progress">
+			<div class="progress__inner js-progress"></div>
+		</div>
+	</div>
+
+{% endblock %}

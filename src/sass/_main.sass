@@ -1,0 +1,44 @@
+.slider
+	position: relative
+	margin: 0 auto
+	width: 50%
+
+.video
+	position: relative
+	video
+		width: 100%
+
+.progress
+	position: absolute
+	z-index: 10
+	bottom: 0
+	left: 0
+	right: 0
+	overflow: hidden
+	height: 12px
+	background: #333
+	&__inner
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		width: 100%
+		background: #000
+		transform: translate3d(-100%,0,0)
+
+.play
+	position: absolute
+	top: 50%
+	left: 50%
+	margin: -20px 0 0 -20px
+	border-radius: 50%
+	width: 40px
+	height: 40px
+	background: lighten(blue, 20%)
+	&:before
+		content: ''
+		position: absolute
+		top: 50%
+		left: 50%
+		margin: -5px 0 0 -4px
+		+arr(12,12,#f2f2f2,r)
